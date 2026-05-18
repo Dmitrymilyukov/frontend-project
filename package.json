@@ -1,0 +1,23 @@
+{
+  "name": "frontend-project",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/Dmitrymilyukov/frontend-project#readme",
+  "bugs": {
+    "url": "https://github.com/Dmitrymilyukov/frontend-project/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dmitrymilyukov/frontend-project.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "http-serve ./src"
+  },
+  "dependencies": {
+    "http-serve": "^1.0.1"
+  }
+}
