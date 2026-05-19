@@ -1,0 +1,117 @@
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.cell {
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+}
+.text {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+.figure {
+    width: 80px;
+    height: 80px;
+    border: 2px solid black;
+    margin: auto;
+    margin-top: 40px;
+}
+.square {
+    background-color: blue;
+}
+.circle {
+    background-color: orange;
+    border-radius: 50%;
+}
+.triangle {
+    background-color: green;
+    clip-path: polygon(50% 0%, 100% 100%, 0% 100%);
+}
+.parallelogram {
+	-webkit-transform: skew(20deg);
+	-moz-transform: skew(20deg);
+	-o-transform: skew(20deg);
+	background-color: red;
+}
+.diamond {
+  background: #8a2be2;
+  transform: rotate(45deg);
+}
+.egg {
+  border: 5px solid black;
+  border-radius: 50% 50% 45% 45%;
+}
+.star {
+  width: 0;
+  height: 0;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellowgreen;
+  position: relative;
+  transform: rotate(35deg);
+}
+
+.star::before {
+  content: '';
+  position: absolute;
+  top: -45px;
+  left: -65px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 30px solid transparent;
+  border-right: 30px solid transparent;
+  border-bottom: 80px solid yellowgreen;
+
+  transform: rotate(-35deg);
+}
+
+.star::after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -105px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 70px solid yellowgreen;
+
+  transform: rotate(-70deg);
+}
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background: red;
+  transform: rotate(-45deg);
+  margin: 50px;
+}
+
+.heart::before,
+.heart::after {
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background: red;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  left: 50px;
+  top: 0;
+}
