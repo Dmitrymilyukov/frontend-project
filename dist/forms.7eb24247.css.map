@@ -1,0 +1,1 @@
+{"mappings":"AAAA","sources":["src/forms/style.css"],"sourcesContent":[".invalid {\r\n    border: 2px solid red;\r\n}"],"names":[],"version":3,"file":"forms.7eb24247.css.map","sourceRoot":"/__parcel_source_root/"}
