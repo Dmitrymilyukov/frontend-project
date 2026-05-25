@@ -13,11 +13,14 @@
   "license": "ISC",
   "author": "",
   "type": "commonjs",
-  "main": "index.js",
   "scripts": {
-    "start": "http-serve ./src"
+    "start": "http-serve ./src",
+    "forms": "parcel ./src/forms/index.html" 
   },
   "dependencies": {
     "http-serve": "^1.0.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.4"
   }
 }
